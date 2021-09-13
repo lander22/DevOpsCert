@@ -1,3 +1,16 @@
+# Commands for launching app
+
+git clone git@github.com:lander22/DevOpsCert.git
+
+docker pull lander22/angularprojectsimplilearn:dev
+docker pull lander22/angularprojectsimplilearn:pro
+
+docker-compose -f deployment/docker-compose.yml up -d 
+
+localhost:4201 ( dev )
+localhost:4202 ( pro ) 
+
+
 # Deploy angular for dev and prod environments
 
 Github: git@github.com:lander22/DevOpsCert.git

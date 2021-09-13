@@ -1,3 +1,6 @@
+Please, read README2.md to deploy this app. 
+
+
 # FirstProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
