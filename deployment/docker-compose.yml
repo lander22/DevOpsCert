@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  angularprojectdev:
+    image: angularprojectdev:latest
+    build:
+      context: ..
+      dockerfile: deployment/DockerfileDev
+    ports:
+      - "4201:4200"
+    volumes:
+      - /home/eellaandeergmai/angularProject/first-project/src:/app/src
+    
+  angularproject:
+    image: angularproject:latest
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+    ports:
+      - "4202:4200"     
+      

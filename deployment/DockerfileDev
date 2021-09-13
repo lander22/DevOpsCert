@@ -1,0 +1,15 @@
+FROM node:16.9.0-slim 
+
+RUN mkdir -p /app
+
+WORKDIR /app
+
+COPY package.json /app
+
+RUN npm install
+
+COPY . /app
+
+RUN npm install @angular/cli -g
+
+CMD ["ng","serve","--host","0.0.0.0"]
