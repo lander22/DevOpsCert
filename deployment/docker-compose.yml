@@ -2,20 +2,24 @@ version: "3.9"
 
 services:
   angularprojectdev:
-    image: angularprojectdev:latest
+    image: lander22/angularprojectsimplilearn:dev
     build:
       context: ..
       dockerfile: deployment/DockerfileDev
     ports:
       - "4201:4200"
     volumes:
-      - /home/eellaandeergmai/angularProject/first-project/src:/app/src
+      - vol:/app/src
+      #- /home/eellaandeergmai/angularProject/first-project/src:/app/src
     
   angularproject:
-    image: angularproject:latest
+    image: lander22/angularprojectsimplilearn:pro
     build:
       context: ..
       dockerfile: deployment/Dockerfile
     ports:
       - "4202:4200"     
+ 
+volumes:
+  vol:
       
